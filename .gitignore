@@ -1,3 +1,10 @@
+# build output
+/amnezia-proxy
+/awg-proxy
+
+# real client config (contains private keys)
+/config.vpn
+/config.conf
 # If you prefer the allow list template instead of the deny list, see community template:
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #

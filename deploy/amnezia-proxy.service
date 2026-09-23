@@ -1,0 +1,13 @@
+[Unit]
+Description=AmneziaWG SOCKS5 + HTTP proxy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/amnezia-proxy -config %h/.vpn/amnezia-proxy.vpn -socks-listen 127.0.0.1:1080 -http-listen 127.0.0.1:8080
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target
