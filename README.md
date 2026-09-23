@@ -232,12 +232,3 @@ aren't supported by the netstack resolver.
 - Split-tunnel via `AllowedIPs` is possible, but the netstack installs a default
   route, so traffic outside `AllowedIPs` is dropped rather than leaked.
 
-## Layout
-
-```
-Software/
-├── amnezia-proxy/     # this module (standalone Go module)
-└── amneziawg-go/      # dependency (local checkout, via go.mod replace)
-```
-
-Requires Go and fetches `amneziawg-go` from GitHub.
