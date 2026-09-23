@@ -26,7 +26,7 @@ client ──SOCKS5 (1080)──▶
 ```
 
 ```
- 1. Read an AmneziaWG .conf (wg-quick INI + AmneziaWG extras)
+ 1. Read a vpn config
  2. Bring up an in-process AmneziaWG device over a userspace netstack
  3. Listen on SOCKS5 + HTTP and route every connection through the tunnel
 ```
